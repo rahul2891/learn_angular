@@ -22,11 +22,6 @@ export class Tasks {
     return this.tasksService.getUserTasks(this.userId);
   }
 
-  onCompleteTask(taskId: string) {
-    this.tasksService.removeTask(taskId);
-    
-  }
-
   onStartAddTask() {  
     // Logic to start adding a new task for the user
     this.isAddingTask = true;
